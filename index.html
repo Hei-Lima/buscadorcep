@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/icon.png" type="image/x-icon">
+    <title>Buscador de CEP</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<div id = "app">
+    <div id="brazilWrapper">
+        <div id="brazil"></div>
+        <div id="brzilGradient"></div>
+    </div>
+    <div id="stripe-container">
+        <div id="stripe-pattern"></div>
+    </div>
+
+    <div id="modal-wrapper">
+        <div id="modal">
+          <div id="modal-background"></div>
+          <div id="modal-content">
+            <p  class="sixty-four-font" id="address"></p>
+            <p  class="sixty-four-font" id="stateText"></p><p id="state"></p>
+            <p  class="sixty-four-font" id="cityText"></p><p id="city"></p>
+            <p  class="sixty-four-font" id="dddText"><p id="ddd"></p>
+            <div id="modal-message">
+              <p  class="sixty-four-font" id="morra">Buscador de CEP</p>
+            </div>
+            <div id="script">
+                <p id="address"></p>
+                <p id="stateText"></p><p id="state"></p>
+                <p id="cityText"></p><p id="city"></p>
+                <p id="dddText"><p id="ddd"></p>
+              </div>
+            <div id="modal-actions">
+              <button type="button" onclick="fetchData()" class="modal-action">
+                <div class="modal-action-pattern"></div>
+                <div class="modal-action-fade"></div>
+                <span class="modal-action-text inter-font">Busque seu CEP</span>
+              </button>
+                <div class="modal-action-pattern"></div>
+                <div class="modal-action-fade"></div>
+                <span class="modal-action-text inter-font"><input type="text" pattern="\d{5}-?\d{3}" maxlength="8" id="cep" placeholder="00000000"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+</div>
+
+</body>
+</html>
